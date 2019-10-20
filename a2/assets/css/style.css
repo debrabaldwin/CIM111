@@ -1,0 +1,140 @@
+body{
+	background-color: pink;
+}
+
+
+
+.header{
+	color:white; 
+}
+
+.title{
+	font-family: 'Roboto', sans-serif;
+	color: navy;
+}
+
+.date{
+	font-family:  'Open Sans', sans-serif;
+	font-style: normal;
+    font-size: 12px;
+    font-weight:400;
+    letter-spacing: 3px;
+}
+
+
+a:link
+{ color: green;
+text-decoration: none;
+}
+
+a:visited
+{
+	color: red;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: pink;
+	text-decoration: none;
+}
+
+a:active
+{
+	color: blue;
+	text-decoration: none;
+}
+
+@font-face
+{font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 100;
+}
+
+@font-face{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+}
+
+p{
+	font-family: roboto;
+	font-weight: 100;
+	font-size: 15px; 
+}
+
+h1{
+	font-family:  'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+h3{
+	font-family:  'Open Sans', sans-serif;
+	font-weight: 200;
+}
+
+
+h2{
+	font-family:  'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+}
+
+/*table tag I haven't used before, also a styled element*/
+table {
+  border-collapse: collapse;
+  width: 30%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th{
+	height: 50px;
+	text-align: left;
+	background-color: white;
+}
+td {
+  height: 50px;
+  vertical-align: bottom;
+  background-color: lightgray;
+}
+
+.textbox{
+    float: left;
+	width: 200px;
+  border: 5px;
+  color: black;
+  padding: 10px;
+  margin: 7px;
+  /*never used tag*/
+  text-transform: uppercase;
+  font-family:  'Open Sans', sans-serif;
+  background-color: lightblue;
+}
+
+#footer {
+position:fixed;
+margin-top: 10px;
+   bottom:0;
+   width:100%;
+   height:10px;   /* Height of the footer */
+  text-align: center;
+  background-color: lightyellow;
+line-height: 10px;
+}
+
+#About{
+		width: 30vw;
+	height:10vw;
+	margin:5vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+
+
+
+
+
+
