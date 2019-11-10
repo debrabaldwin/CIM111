@@ -1,0 +1,84 @@
+html,body{
+      height: 100%;
+    }
+    body{
+      margin: 0;
+      background-color: green;
+    }
+    .container {
+      display: grid;
+      height: 100%;
+      /*grid-template-columns: 1fr; */
+      grid-template-rows: 300px 20px 1fr 1fr 80px;
+
+      /* Define your template page areas */
+      grid-template-areas:
+      			"header  header  header"
+                "nav     nav     nav"
+                "article article article"
+                "aside   aside   aside"
+                "footer  footer  footer"; 
+    }
+
+    nav {
+      grid-area: nav;
+      text-align: right;
+      background-color: orange;
+    }
+
+    article {
+       grid-area: article;
+    	background-color: #c2e78c;
+       margin: 10px;
+       padding: 10px;
+    }
+
+    aside {
+    	grid-area: aside;
+    	background-color: #c2e78c;
+    	margin: 10px;
+    	padding: 10px;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: orange;
+        text-align: center;
+        line-height: 60px;
+
+    }
+ 
+    footer {
+      grid-area: footer;
+       background-color: orange;
+       font-style: italic;
+       color: white;
+      margin-top: 20px;
+    }
+
+    a{
+	margin-right: 10px;
+	text-decoration: none;
+	color: white;
+    }
+
+	a:hover{
+		text-decoration: underline;
+		color: black;
+	}
+
+	header{
+	grid-area: header;
+	background-color: black;
+    background-image: url("dpMobile.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	}
+
+
+
+
+
+
+

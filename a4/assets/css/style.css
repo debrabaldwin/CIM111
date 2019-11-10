@@ -1,0 +1,240 @@
+html,body{
+      height: 100%;
+    }
+    body{
+      margin: 0;
+      background-color: lightblue;
+    }
+
+
+    .container {
+      display: grid;
+      height: 100%;
+      /*grid-template-columns: 1fr; */
+      grid-template-rows: 300px 20px 1fr 1fr 80px;
+
+      /* Define your template page areas */
+      grid-template-areas:
+      			"header  header  header"
+                "nav     nav     nav"
+                "article article article"
+                "aside   aside   aside"
+                "footer  footer  footer"; 
+
+    }
+
+    nav {
+      grid-area: nav;
+      text-align: right;
+      background-color: lightgreen;
+    }
+
+    article {
+       grid-area: article;
+    	background-color: lightgray;
+       margin: 10px;
+       padding: 10px;
+    }
+
+    aside {
+    	grid-area: aside;
+    	background-color: lightgray;
+    	margin: 10px;
+    	padding: 10px;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: lightgreen;
+        text-align: center;
+        line-height: 60px;
+
+    }
+ 
+    footer {
+      grid-area: footer;
+       background-color: lightgreen;
+       font-style: italic;
+       color: white;
+      margin-top: 20px;
+    }
+
+    a{
+	margin-right: 10px;
+	text-decoration: none;
+	color: white;
+    }
+
+	a:hover{
+		text-decoration: underline;
+		color: black;
+	}
+
+	header{
+	grid-area: header;
+    background-image: url("../bhcover.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+   font-family: roboto;
+  font-weight: 100;
+  font-size: 60px; 
+  text-align: center;
+  padding-top: 60px
+  
+	}
+
+
+  @font-face
+{font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 100;
+}
+
+@font-face{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
+
+p{
+  font-family: roboto;
+  font-weight: 100;
+  font-size: 15px; 
+}
+
+h1{
+  font-family:  'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+a:link
+{ color: white;
+text-decoration: none;
+}
+
+a:visited
+{
+  color: purple;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: pink;
+  text-decoration: none;
+}
+
+a:active
+{
+  color: blue;
+  text-decoration: none;
+}
+
+
+
+/*gallery*/
+.gallery{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto, minmax(200px, 1fr));
+ 
+}
+
+gallery img{
+  width: 100%;
+}
+
+gallery h2{
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  align-content: center
+}
+
+gallery h2:before, gallery h2:after{
+  display: block;
+  content: "";
+  height: 10px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* tablet sized devices */
+  @media only screen and (min-width: 500px) {
+
+    body{
+    background-color: pink;
+    }
+
+    header{
+    background-color: white;
+      background-image: url("../bhcover.png");
+      }
+
+    .container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav    nav    nav"
+      "article article aside"
+      "footer footer footer";
+    }
+  }
+
+
+  /* MEDIA QUERIES desktop sized devices */ 
+  @media only screen and (min-width: 768px) {
+    body{
+  
+
+    header{
+      background-image: url("../bhcover.png");
+      }
+   .container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav    nav    nav"
+      "article article aside"
+      "footer footer footer";
+    }
+  
+  }
+
+/* small devices */
+ @media only screen and (min-width: 375px) {
+   body{
+        background-color: lightblue;
+      }
+      .container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav    nav    nav"
+      "article article aside"
+      "footer footer footer";
+    }
+}
+
+
+
+
+
+
+
